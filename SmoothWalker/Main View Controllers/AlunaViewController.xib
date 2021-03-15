@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlunaViewController" customModule="SmoothWalker" customModuleProvider="target">
+            <connections>
+                <outlet property="barChartView" destination="lDM-dX-13Q" id="eUv-fm-E45"/>
+                <outlet property="periodSelector" destination="Y4u-oM-l9m" id="Kck-hy-hY0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDM-dX-13Q" customClass="BarChartView" customModule="Charts">
+                    <rect key="frame" x="0.0" y="44" width="414" height="779"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                </view>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Y4u-oM-l9m" userLabel="Period Selector">
+                    <rect key="frame" x="119" y="831" width="176" height="32"/>
+                    <segments>
+                        <segment title="Day"/>
+                        <segment title="Week"/>
+                        <segment title="Month"/>
+                    </segments>
+                    <connections>
+                        <action selector="periodSelected:" destination="-1" eventType="valueChanged" id="SrB-Mv-2GC"/>
+                    </connections>
+                </segmentedControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Y4u-oM-l9m" secondAttribute="bottom" id="3Ox-NV-xN3"/>
+                <constraint firstItem="lDM-dX-13Q" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4fR-KB-kJG"/>
+                <constraint firstItem="lDM-dX-13Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Aoq-wF-pi5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lDM-dX-13Q" secondAttribute="trailing" id="at5-ZD-ZTd"/>
+                <constraint firstItem="Y4u-oM-l9m" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qoF-yb-VXQ"/>
+                <constraint firstItem="Y4u-oM-l9m" firstAttribute="top" secondItem="lDM-dX-13Q" secondAttribute="bottom" constant="8" symbolic="YES" id="zql-DX-Tmh"/>
+            </constraints>
+            <point key="canvasLocation" x="-4597" y="200"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -91,6 +91,15 @@ func createLastWeekPredicate(from endDate: Date = Date()) -> NSPredicate {
     return HKQuery.predicateForSamples(withStart: startDate, end: endDate)
 }
 
+func getLastYearStartDate(from date: Date = Date()) -> Date {
+    return Calendar.current.date(byAdding: .day, value: -365, to: date)!
+}
+
+func createLastYearPredicate(from endDate: Date = Date()) -> NSPredicate {
+    let startDate = getLastYearStartDate(from: endDate)
+    return HKQuery.predicateForSamples(withStart: startDate, end: endDate)
+}
+
 /// Return the most preferred `HKStatisticsOptions` for a data type identifier. Defaults to `.discreteAverage`.
 func getStatisticsOptions(for dataTypeIdentifier: String) -> HKStatisticsOptions {
     var options: HKStatisticsOptions = .discreteAverage

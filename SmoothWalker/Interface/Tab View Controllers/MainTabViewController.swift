@@ -30,7 +30,8 @@ class MainTabViewController: UITabBarController {
             createWelcomeViewController(),
             createWeeklyQuantitySampleTableViewController(),
             createChartViewController(),
-            createWeeklyReportViewController()
+            createWeeklyReportViewController(),
+            createAlunaViewController()
         ]
         
         self.viewControllers = viewControllers.map {
@@ -68,16 +69,25 @@ class MainTabViewController: UITabBarController {
                                                  selectedImage: UIImage(systemName: "square.fill"))
         return viewController
     }
-    
+
     private func createWeeklyReportViewController() -> UIViewController {
         let viewController = WeeklyReportTableViewController()
-        
+
         viewController.tabBarItem = UITabBarItem(title: "Weekly Report",
                                                  image: UIImage(systemName: "star"),
                                                  selectedImage: UIImage(systemName: "star.fill"))
         return viewController
     }
-    
+
+    private func createAlunaViewController() -> UIViewController {
+        let viewController = AlunaViewController()
+
+        viewController.tabBarItem = UITabBarItem(title: "Speed",
+                                                 image: UIImage(systemName: "circle"),
+                                                 selectedImage: UIImage(systemName: "circle.fill"))
+        return viewController
+    }
+
     // MARK: - View Persistence
     
     private static let lastViewControllerViewed = "LastViewControllerViewed"

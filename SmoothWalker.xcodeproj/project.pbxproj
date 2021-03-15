@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D9F07BA25FED61800840AB2 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 1D9F07B925FED61800840AB2 /* Charts */; };
+		1D9F07BE25FED68200840AB2 /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9F07BC25FED68200840AB2 /* Period.swift */; };
+		1D9F07BF25FED68200840AB2 /* DayAxisValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9F07BD25FED68200840AB2 /* DayAxisValueFormatter.swift */; };
+		1DA7C57F25FF3C09004A1353 /* AlunaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA7C57D25FF3C09004A1353 /* AlunaViewController.swift */; };
+		1DA7C58025FF3C09004A1353 /* AlunaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DA7C57E25FF3C09004A1353 /* AlunaViewController.xib */; };
 		EB12722B24859C1600548CD1 /* DataTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12722A24859C1600548CD1 /* DataTypeTableViewCell.swift */; };
 		EB12722D2485BA9400548CD1 /* HealthDataTypeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12722C2485BA9400548CD1 /* HealthDataTypeValue.swift */; };
 		EB12722F2485C83E00548CD1 /* EmptyDataBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12722E2485C83E00548CD1 /* EmptyDataBackgroundView.swift */; };
@@ -41,7 +46,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8037822B27C5C24067AC1EBF /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		1D9F07BC25FED68200840AB2 /* Period.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
+		1D9F07BD25FED68200840AB2 /* DayAxisValueFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayAxisValueFormatter.swift; sourceTree = "<group>"; };
+		1DA7C57D25FF3C09004A1353 /* AlunaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlunaViewController.swift; sourceTree = "<group>"; };
+		1DA7C57E25FF3C09004A1353 /* AlunaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlunaViewController.xib; sourceTree = "<group>"; };
+		8037822B27C5C24067AC1EBF /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		DDC3EAD6D9404AADDCC92FF8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EB12722A24859C1600548CD1 /* DataTypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTypeTableViewCell.swift; sourceTree = "<group>"; };
 		EB12722C2485BA9400548CD1 /* HealthDataTypeValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataTypeValue.swift; sourceTree = "<group>"; };
@@ -67,7 +76,7 @@
 		EB9525BF2474C9C2001B5178 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		EB9525C12475BD41001B5178 /* HealthKitSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitSupport.swift; sourceTree = "<group>"; };
 		EBEF213B2462289B0055F482 /* FeedItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemCollectionViewCell.swift; sourceTree = "<group>"; };
-		F06C5C28897D1C25EF30CF88 /* ACKNOWLEDGMENTS.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = ACKNOWLEDGMENTS.txt; sourceTree = "<group>"; };
+		F06C5C28897D1C25EF30CF88 /* ACKNOWLEDGMENTS.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = ACKNOWLEDGMENTS.txt; sourceTree = "<group>"; };
 		F9907AEF2458947C00987667 /* SmoothWalker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmoothWalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9907AF22458947C00987667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9907AF42458947C00987667 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,7 +86,7 @@
 		F9907B002458947D00987667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9907B06245894E600987667 /* SmoothWalker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmoothWalker.entitlements; sourceTree = "<group>"; };
 		F9907B08245894E600987667 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
-		FEDEA0134A58BE9A54B6DBA4 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		FEDEA0134A58BE9A54B6DBA4 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB2ACB972492B2D600DEFA22 /* CareKitUI in Frameworks */,
+				1D9F07BA25FED61800840AB2 /* Charts in Frameworks */,
 				F9907B09245894E600987667 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,7 +109,6 @@
 				FEDEA0134A58BE9A54B6DBA4 /* LICENSE.txt */,
 				F06C5C28897D1C25EF30CF88 /* ACKNOWLEDGMENTS.txt */,
 			);
-			name = LICENSE;
 			path = LICENSE;
 			sourceTree = "<group>";
 		};
@@ -192,6 +201,10 @@
 				EB9525B62474C396001B5178 /* WeeklyDataTableViewController.swift */,
 				EB644F9E24730E2B00CF27F0 /* MobilityChartDataViewController.swift */,
 				EB9525BB2474C930001B5178 /* WeeklyReportTableViewController.swift */,
+				1DA7C57D25FF3C09004A1353 /* AlunaViewController.swift */,
+				1DA7C57E25FF3C09004A1353 /* AlunaViewController.xib */,
+				1D9F07BD25FED68200840AB2 /* DayAxisValueFormatter.swift */,
+				1D9F07BC25FED68200840AB2 /* Period.swift */,
 			);
 			name = "View Controllers";
 			path = "Main View Controllers";
@@ -292,6 +305,7 @@
 			name = SmoothWalker;
 			packageProductDependencies = (
 				EB2ACB962492B2D600DEFA22 /* CareKitUI */,
+				1D9F07B925FED61800840AB2 /* Charts */,
 			);
 			productName = WWDCDemo;
 			productReference = F9907AEF2458947C00987667 /* SmoothWalker.app */;
@@ -323,6 +337,7 @@
 			mainGroup = F9907AE62458947B00987667;
 			packageReferences = (
 				EB2ACB952492B2D600DEFA22 /* XCRemoteSwiftPackageReference "CareKit" */,
+				1D9F07B825FED61800840AB2 /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = F9907AF02458947C00987667 /* Products */;
 			projectDirPath = "";
@@ -340,6 +355,7 @@
 			files = (
 				EB1B0CAA2486D7A700724782 /* Localizable.stringsdict in Resources */,
 				F9907AFF2458947D00987667 /* LaunchScreen.storyboard in Resources */,
+				1DA7C58025FF3C09004A1353 /* AlunaViewController.xib in Resources */,
 				EB9525B324735827001B5178 /* MockServerResponse.json in Resources */,
 				F9907AFC2458947D00987667 /* Assets.xcassets in Resources */,
 			);
@@ -354,6 +370,7 @@
 			files = (
 				EB12722D2485BA9400548CD1 /* HealthDataTypeValue.swift in Sources */,
 				F9907AF72458947C00987667 /* FeedItemViewController.swift in Sources */,
+				1D9F07BF25FED68200840AB2 /* DayAxisValueFormatter.swift in Sources */,
 				EB9525BE2474C9A2001B5178 /* SplashScreenViewController.swift in Sources */,
 				EB9525BA2474C8F2001B5178 /* ChartTableViewController.swift in Sources */,
 				EB644FA1247311DF00CF27F0 /* Network.swift in Sources */,
@@ -367,12 +384,14 @@
 				EB9525BC2474C930001B5178 /* WeeklyReportTableViewController.swift in Sources */,
 				EBEF213C2462289B0055F482 /* FeedItemCollectionViewCell.swift in Sources */,
 				F9907AF32458947C00987667 /* AppDelegate.swift in Sources */,
+				1DA7C57F25FF3C09004A1353 /* AlunaViewController.swift in Sources */,
 				F9907AF52458947C00987667 /* SceneDelegate.swift in Sources */,
 				EB9525B72474C396001B5178 /* WeeklyDataTableViewController.swift in Sources */,
 				EB48C1C1246B2EB800AE8FE3 /* UIApplication+Extension.swift in Sources */,
 				EB1272332485D5D200548CD1 /* DataTableViewController.swift in Sources */,
 				EB326B4E246B16AD00FEFD08 /* MainTabViewController.swift in Sources */,
 				EB48C1CA246B3A0300AE8FE3 /* ChartViewStyle.swift in Sources */,
+				1D9F07BE25FED68200840AB2 /* Period.swift in Sources */,
 				EB48C1C4246B351C00AE8FE3 /* CareKitSupport.swift in Sources */,
 				EB644F9F24730E2B00CF27F0 /* MobilityChartDataViewController.swift in Sources */,
 				EB9525C02474C9C2001B5178 /* WelcomeViewController.swift in Sources */,
@@ -590,6 +609,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1D9F07B825FED61800840AB2 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
 		EB2ACB952492B2D600DEFA22 /* XCRemoteSwiftPackageReference "CareKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/carekit-apple/CareKit";
@@ -601,6 +628,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1D9F07B925FED61800840AB2 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D9F07B825FED61800840AB2 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
 		EB2ACB962492B2D600DEFA22 /* CareKitUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EB2ACB952492B2D600DEFA22 /* XCRemoteSwiftPackageReference "CareKit" */;
