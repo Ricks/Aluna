@@ -1,11 +1,11 @@
 {
     "identifier": "WWDC_2020",
-    "date": "2020-06-22T009:41:00-07:00",
+    "date": "2020-06-29T009:41:00-07:00",
 
     "weeklyReport": {
             "identifier": "WeeklyReport1",
             "startDate": "2020-06-16T08:00:00-07:00",
-            "endDate": "2020-06-22T08:00:00-07:00",
+            "endDate": "2020-06-29T08:00:00-07:00",
             
             "samples": [
                 {
@@ -77,6 +77,76 @@
                     "value": 490,
                     "startDate": "2020-06-22T08:00:00-07:00",
                     "endDate": "2020-06-22T20:00:00-07:00",
+                },
+                {
+                    "syncIdentifier": "SyncIdentifier8",
+                    "syncVersion": 1,
+                    "type": "quantity",
+                    "typeIdentifier": "HKQuantityTypeIdentifierSixMinuteWalkTestDistance",
+                    "unit": "meter",
+                    "value": 475,
+                    "startDate": "2020-06-23T08:00:00-07:00",
+                    "endDate": "2020-06-23T20:00:00-07:00",
+                },
+                {
+                    "syncIdentifier": "SyncIdentifier9",
+                    "syncVersion": 1,
+                    "type": "quantity",
+                    "typeIdentifier": "HKQuantityTypeIdentifierSixMinuteWalkTestDistance",
+                    "unit": "meter",
+                    "value": 484,
+                    "startDate": "2020-06-24T08:00:00-07:00",
+                    "endDate": "2020-06-24T20:00:00-07:00",
+                },
+                {
+                    "syncIdentifier": "SyncIdentifier10",
+                    "syncVersion": 1,
+                    "type": "quantity",
+                    "typeIdentifier": "HKQuantityTypeIdentifierSixMinuteWalkTestDistance",
+                    "unit": "meter",
+                    "value": 482,
+                    "startDate": "2020-06-25T08:00:00-07:00",
+                    "endDate": "2020-06-25T20:00:00-07:00",
+                },
+                {
+                    "syncIdentifier": "SyncIdentifier11",
+                    "syncVersion": 1,
+                    "type": "quantity",
+                    "typeIdentifier": "HKQuantityTypeIdentifierSixMinuteWalkTestDistance",
+                    "unit": "meter",
+                    "value": 480,
+                    "startDate": "2020-06-26T08:00:00-07:00",
+                    "endDate": "2020-06-26T20:00:00-07:00",
+                },
+                {
+                    "syncIdentifier": "SyncIdentifier12",
+                    "syncVersion": 1,
+                    "type": "quantity",
+                    "typeIdentifier": "HKQuantityTypeIdentifierSixMinuteWalkTestDistance",
+                    "unit": "meter",
+                    "value": 465,
+                    "startDate": "2020-06-27T08:00:00-07:00",
+                    "endDate": "2020-06-27T20:00:00-07:00",
+                },
+                {
+                    "syncIdentifier": "SyncIdentifier13",
+                    "syncVersion": 1,
+                    "type": "quantity",
+                    "typeIdentifier": "HKQuantityTypeIdentifierSixMinuteWalkTestDistance",
+                    "unit": "meter",
+                    "value": 460,
+                    "startDate": "2020-06-28T08:00:00-07:00",
+                    "endDate": "2020-06-28T20:00:00-07:00",
+                },
+                {
+                    "syncIdentifier": "SyncIdentifier14",
+                    "syncVersion": 1,
+                    "type": "quantity",
+                    "typeIdentifier": "HKQuantityTypeIdentifierSixMinuteWalkTestDistance",
+                    "unit": "meter",
+                    "value": 493,
+                    "startDate": "2020-06-29T08:00:00-07:00",
+                    "endDate": "2020-06-29T20:00:00-07:00",
                 }
             ]
     }

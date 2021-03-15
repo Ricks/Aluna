@@ -30,8 +30,14 @@ class AlunaViewController: UIViewController, ChartViewDelegate, HealthQueryDataS
         didSet {
             let set = BarChartDataSet(entries: values, label: "Speed (mph)")
             barChartView.data = BarChartData(dataSet: set)
+            let formatter = NumberFormatter()
+            formatter.minimumFractionDigits = 2
+            formatter.maximumFractionDigits = 2
+            barChartView.data?.setValueFormatter(DefaultValueFormatter(formatter: formatter))
+            setPeriodZoom(period)
         }
     }
+    let metersPerMile = 1609.34
 
     // MARK: Initializers
 
@@ -94,7 +100,7 @@ class AlunaViewController: UIViewController, ChartViewDelegate, HealthQueryDataS
         HealthData.requestHealthDataAccessIfNeeded(dataTypes: [dataTypeIdentifier]) { (success) in
             if success {
                 // Perform the query and reload the data.
-                self.loadData()
+                self.fetchData()
             }
         }
     }
@@ -188,7 +194,8 @@ class AlunaViewController: UIViewController, ChartViewDelegate, HealthQueryDataS
                 self.startDate = self.dataValues[0].startDate
                 for dataValue in self.dataValues {
                     let days = dataValue.startDate.timeIntervalSince(self.startDate) / (3600 * 24)
-                    vals.append(BarChartDataEntry(x: days, y: dataValue.value))
+                    vals.append(BarChartDataEntry(x: days,
+                                                  y: dataValue.value * 10 / self.metersPerMile))
                 }
             }
             self.values = vals
@@ -205,10 +212,10 @@ class AlunaViewController: UIViewController, ChartViewDelegate, HealthQueryDataS
         if n < values.count {
             desiredScaleX = CGFloat(values.count + 1) / (CGFloat(n) + 0.4)
         }
-        print("desiredScaleX = \(desiredScaleX)")
+        print("n = \(n), desiredScaleX = \(desiredScaleX)")
         barChartView.zoomAndCenterViewAnimated(scaleX: desiredScaleX,
                                                scaleY: 1.0,
-                                               xValue: centerX,
+                                               xValue: round(centerX),
                                                yValue: 0.0,
                                                axis: .left,
                                                duration: 0.5)
@@ -257,7 +264,6 @@ class AlunaViewController: UIViewController, ChartViewDelegate, HealthQueryDataS
 
     @IBAction func periodSelected(_ sender: Any) {
         if let period = Period.init(rawValue: periodSelector.selectedSegmentIndex) {
-            print("periodSelector.selectedSegmentIndex = \(periodSelector.selectedSegmentIndex)")
             self.period = period
             setPeriodZoom(period)
             setPeriodChartAttrs(period)

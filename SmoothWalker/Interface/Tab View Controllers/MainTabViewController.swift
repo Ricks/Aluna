@@ -83,8 +83,8 @@ class MainTabViewController: UITabBarController {
         let viewController = AlunaViewController()
 
         viewController.tabBarItem = UITabBarItem(title: "Speed",
-                                                 image: UIImage(systemName: "circle"),
-                                                 selectedImage: UIImage(systemName: "circle.fill"))
+                                                 image: UIImage(systemName: "bolt"),
+                                                 selectedImage: UIImage(systemName: "bolt.fill"))
         return viewController
     }
 
